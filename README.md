@@ -1,4 +1,4 @@
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/750d77ad-51cd-4e74-9df1-bdc3e78453ca" /><img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/6448d035-6568-4163-9414-ebffa2c1efc8" /><img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/0984a0c7-2526-49db-9f0f-7a1fa66ffb4d" /># Bandwidths-of-different-Mininet-Topologies
+# Bandwidths-of-different-Mininet-Topologies
 
 Different network topologies give different throughputs based on the Bandwidths they are provided with. Here I will be testing out three different types of topologies on the same bandwidth value of 10MBps.
 
@@ -21,7 +21,6 @@ As seen here the logs show how everything is filtered and what pings to what ip.
 We set the server to run iperf on in host 4. From there we use iperf it to send packets via host 2 to host 4. As per the iperf we see that the real bandwidth available for this topology is 8.06MBps. The throughput can be determined as 0.965346534653 MBps
 
 <img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/a4281101-bed5-4a7c-98eb-fc5c4e7d2021" />
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/a74b5a24-73dc-49ed-ac54-8b2046fa32d1" />
 
 As we can see here this is the respective flow table for the topology.
 
