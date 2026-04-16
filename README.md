@@ -69,7 +69,7 @@ Furthermore As we can see here these are how the pings are transmit.
 Here we can see that the bandwidth is 8.06MBps like that of the linear tree network. It also has a similar throughput of 0.965346534653 MBps which makes sense since they have to pass through a similar amount of switches to reach their location.
 
 
-![Uploading image.png…]()
+<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/ea299d8c-0480-427f-8e7c-79ab5ac70bc3" />
 
 
 This is the flow table
