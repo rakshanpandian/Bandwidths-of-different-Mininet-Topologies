@@ -12,7 +12,8 @@ In a Bus Topology there is a singular linear line by which every host sends it's
 <img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/55586b33-f106-4a93-9470-cecdf9ca7c49" />
 As seen here h1 can't reach h3. This is because a rule has been set within the ryu controller to filter any packets going from h1 to h3 and vice versa. This filter exists or every topology in use
 
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/ce5fad97-1d6f-42dc-a002-274264bbda89" />
+<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/92935f19-b620-4621-87ed-9c1a8a828b4b" />
+
 
 As seen here the logs show how everything is filtered and what pings to what ip.
 
