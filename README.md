@@ -62,7 +62,7 @@ With this topology a switch has one or more host nodes tied to it. Every switch 
 As can be seen every member of the tree can ping each other excluding h1<->h3 as they have blocked each other.
 
 <img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/f0de431f-7465-4e8a-9eb2-88475a92119d" />
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/e5b9ec17-5288-4d94-89cc-5afbf00f3281" />
+<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/f01e9a8b-6c76-45e4-8b14-a75ce12780c9" />
 
 Furthermore As we can see here these are how the pings are transmit.
 
