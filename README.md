@@ -37,11 +37,13 @@ Think about what would happen if you linked the end of the line with it's beginn
 
 As can be seen here it is hard to ping the different hosts for a ring topology. This stems from it's cyclical structure which makes it harder for the switches to determine where to forward a packet. However with the final pings we see that they are able to find where they can ping their packets.
 
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/13589173-1ce0-45f9-97f2-f6a1dde0da8e" />
+<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/5f2912a6-7510-4fc7-836e-3e2f9e069074" />
+
 
 However as shown, they still can block pings from h1 to h3.
 
-<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/5f2912a6-7510-4fc7-836e-3e2f9e069074" />
+<img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/13589173-1ce0-45f9-97f2-f6a1dde0da8e" />
+
 As per the iperf operation we get a higher bandwidth as compared to the bus topology as they have a shared network. Furthermore, the throughput of the topology gives a considerable 1.108910891089109MBps which is higher than the bus topology.
 
 <img width="940" height="556" alt="image" src="https://github.com/user-attachments/assets/7cc35f3b-b23d-45c3-bf53-b5a70b45ecd1" />
