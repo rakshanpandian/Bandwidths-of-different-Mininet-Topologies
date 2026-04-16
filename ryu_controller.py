@@ -17,7 +17,7 @@ class RyuController(app_manager.RyuApp):
         self.mac_to_port = {}
         self.stp = kwargs['stplib']
 
-        # Optional: Set bridge priority (lower value = root bridge)
+
         # s1 will be the root of the tree/ring/bus
         config = {dpid_lib.str_to_dpid('0000000000000001'): {'bridge_priority': 0x8000}}
         self.stp.set_config(config)
@@ -48,13 +48,15 @@ class RyuController(app_manager.RyuApp):
         pkt = packet.Packet(msg.data)
         eth = pkt.get_protocols(ethernet.ethernet)[0]
         
-        # Scenario: Block 10.0.0.1 (h1) to 10.0.0.3 (h3)
+        # Blocks 10.0.0.1 (h1) to 10.0.0.3 (h3)
         ip_pkt = pkt.get_protocol(ipv4.ipv4)
+        
         if ip_pkt:
-            if ip_pkt.src == '10.0.0.1' and ip_pkt.dst == '10.0.0.3':
+            self.logger.info("Packet pinged from %s to %s", ip_pkt.src, ip_pkt.dst)
+            if (ip_pkt.src == '10.0.0.1' and ip_pkt.dst == '10.0.0.3') or (ip_pkt.src == '10.0.0.3' and ip_pkt.dst == '10.0.0.1'):
                 self.logger.info("DROPPED: Filtered packet from %s to %s", ip_pkt.src, ip_pkt.dst)
                 match = parser.OFPMatch(eth_type=0x0800, ipv4_src='10.0.0.1', ipv4_dst='10.0.0.3')
-                self.add_flow(datapath, 10, match, [])
+                self.add_flow(datapath, 100, match, [])
                 return
 
         # Simple Learning Switch Logic
